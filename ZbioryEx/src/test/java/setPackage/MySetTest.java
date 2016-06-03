@@ -2,17 +2,41 @@ package setPackage;
 
 import static org.junit.Assert.*;
 
-import org.junit.Test;
+import java.util.Arrays;
+import java.util.Collection;
 
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+
+@RunWith(Parameterized.class)
 public class MySetTest {
+	
+	//PARAMETRY
+	int param;
+	boolean expected;
+	
+	@Parameters
+    public static Collection<Object[]> data() {
+    	
+    	return Arrays.asList(new Object[][]
+    			{ { 1, true}, {2, true} } );
+    }
+	
+	public MySetTest(int param, boolean expected)
+	{
+		this.param = param;
+		this.expected = expected;
+	}
+	
 
 	@Test
-	public void test() {
+	public void test()
+	{
+		MySet<Integer> obj = new MySet<Integer>();
+		obj.add(param);
 		
-		MySet<Integer> obj = new MySet();
-		obj.add(5);
-		
-		assertEquals("Test pierwszy: dodawanie elementu", true, obj.contains(5));
+		assertEquals("Test pierwszy: dodawanie elementu", expected, obj.contains(param));
 	}
-
 }
