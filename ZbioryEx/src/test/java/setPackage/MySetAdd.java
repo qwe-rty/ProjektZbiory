@@ -11,7 +11,7 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
 @RunWith(Parameterized.class)
-public class MySetTest {
+public class MySetAdd {
 	
 	//PARAMETRY
 	int param;
@@ -24,7 +24,7 @@ public class MySetTest {
     			{ { 1, true}, {2, true} } );
     }
 	
-	public MySetTest(int param, boolean expected)
+	public MySetAdd(int param, boolean expected)
 	{
 		this.param = param;
 		this.expected = expected;
@@ -32,7 +32,7 @@ public class MySetTest {
 	
 
 	@Test
-	public void test()
+	public void addTest()
 	{
 		MySet<Integer> obj = new MySet<Integer>();
 		obj.add(param);
