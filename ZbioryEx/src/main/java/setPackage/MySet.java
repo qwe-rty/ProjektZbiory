@@ -37,6 +37,23 @@ public class MySet<E> implements Set<E> {
         	this.add(elem);
     }   
     
+    @Override
+    public boolean equals(Object other)
+    {
+    	
+    	MySet<Integer> otherAsSet;
+    	try
+    	{
+    		otherAsSet = (MySet<Integer>) other;
+    		return this.containsAll(otherAsSet ) && otherAsSet.containsAll(this);
+    	}
+    	catch(ClassCastException ex)
+    	{
+    		return false;
+    	}
+
+    }
+    
     //@Override
     public int size() {
         return elements.size();
