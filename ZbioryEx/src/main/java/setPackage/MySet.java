@@ -26,13 +26,15 @@ public class MySet<E> implements Set<E> {
     public MySet(Collection<? extends E> c)
     {
         this.elements = new ArrayList();
-        this.elements.addAll(c);
+        for(E elem : c)
+        	this.add(elem);
     }
     
     public MySet(E... elements)
     {
         this.elements = new ArrayList();        
-        this.elements.addAll(Arrays.asList(elements));
+        for(E elem : elements)
+        	this.add(elem);
     }   
     
     //@Override
@@ -86,11 +88,8 @@ public class MySet<E> implements Set<E> {
         
         for(E e : c)
         {
-            if(!elements.contains(e))
-            {
-                elements.add(e);
-                changed = true;
-            }
+        	if(this.add(e))		//tutaj zachodzi efekt uboczny
+        		changed = true;
         }
         
         return changed;
