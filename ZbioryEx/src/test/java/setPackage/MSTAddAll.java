@@ -39,8 +39,6 @@ public class MSTAddAll {
 		}
 			
 		assertArrayEquals("Test add all: problem with " + badValues.toString(), new ArrayList<Integer>().toArray(), badValues.toArray() );
-		
-		
 	}
 
 }
