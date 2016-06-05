@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 import org.junit.Test;
 
-import setPackage.MySet;
+import setpackage.MySet;
 
 public class MSTAddAllTest {
 

@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
-import setPackage.MySet;
+import setpackage.MySet;
 
 @RunWith(Parameterized.class)
 public class MSTToStringTest {

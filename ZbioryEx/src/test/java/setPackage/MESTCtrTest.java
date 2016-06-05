@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import setPackage.MyExtendedSet;
+import setpackage.MyExtendedSet;
 
 public class MESTCtrTest {
 	

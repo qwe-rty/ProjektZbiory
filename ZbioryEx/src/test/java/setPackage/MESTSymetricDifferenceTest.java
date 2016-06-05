@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
-import setPackage.MyExtendedSet;
+import setpackage.MyExtendedSet;
 
 @RunWith(Parameterized.class)
 public class MESTSymetricDifferenceTest {
