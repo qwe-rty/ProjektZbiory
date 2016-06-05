@@ -10,8 +10,10 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
+import setPackage.MySet;
+
 @RunWith(Parameterized.class)
-public class MSTToString {
+public class MSTToStringTest {
 	
 	//PARAMETRY
 	MySet<Integer> tested = new MySet<Integer>(1,2,3,4,5,6,7,8,9,10);	
@@ -30,7 +32,7 @@ public class MSTToString {
 	   			} );
 	}
 	    
-	public MSTToString(Integer[] params, String expected)
+	public MSTToStringTest(Integer[] params, String expected)
 	{
 		this.params = params;
 		this.expected = expected;

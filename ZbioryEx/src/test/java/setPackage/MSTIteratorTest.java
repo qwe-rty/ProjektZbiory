@@ -12,8 +12,10 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
+import setPackage.MySet;
+
 @RunWith(Parameterized.class)
-public class MSTIterator {
+public class MSTIteratorTest {
 
 	Integer[] params;
 	int val;
@@ -31,7 +33,7 @@ public class MSTIterator {
     			} );
     }
     
-    public MSTIterator(Integer[] params, int val, boolean expected)
+    public MSTIteratorTest(Integer[] params, int val, boolean expected)
 	{
 		this.params = params;
 		this.val = val;

@@ -4,7 +4,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class MSTCtrCpy {
+import setPackage.MySet;
+
+public class MSTCtrCpyTest {
 
 	@Test
 	public void cpyCtrTest()

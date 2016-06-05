@@ -11,8 +11,10 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
+import setPackage.MySet;
+
 @RunWith(Parameterized.class)
-public class MSTToArray {
+public class MSTToArrayTest {
 	
 	//PARAMETRY
 	Integer[] params;
@@ -27,7 +29,7 @@ public class MSTToArray {
     			} );
     }
 	
-	public MSTToArray(Integer[] params)
+	public MSTToArrayTest(Integer[] params)
 	{
 		this.params = params;
 	}

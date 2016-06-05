@@ -10,8 +10,10 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
+import setPackage.MySet;
+
 @RunWith(Parameterized.class)
-public class MSTSize {
+public class MSTSizeTest {
 	Integer[] a;
 	int size;
 	boolean expected;
@@ -26,7 +28,7 @@ public class MSTSize {
     				{ new Integer[]{0,1,2,3}, 0, false},    				
     			} );
     }
-    public MSTSize(Integer[] a, int size, boolean expected){
+    public MSTSizeTest(Integer[] a, int size, boolean expected){
 		this.a = a;
 		this.size = size;
 		this.expected = expected;

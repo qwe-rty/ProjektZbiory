@@ -11,8 +11,10 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
+import setPackage.MySet;
+
 @RunWith(Parameterized.class)
-public class MSTRetainAll {
+public class MSTRetainAllTest {
 
 	//PARAMETRY
 	MySet<Integer> tested = new MySet<Integer>(1,2,3,4,5,6,7,8,9,10);	
@@ -31,7 +33,7 @@ public class MSTRetainAll {
 	   			} );
 	}
 	    
-	public MSTRetainAll(Integer[] params, Integer[] expected)
+	public MSTRetainAllTest(Integer[] params, Integer[] expected)
 	{
 		this.params = params;
 		this.expected = expected;

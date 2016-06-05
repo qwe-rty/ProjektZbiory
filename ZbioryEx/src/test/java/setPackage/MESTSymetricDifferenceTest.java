@@ -10,8 +10,10 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
+import setPackage.MyExtendedSet;
+
 @RunWith(Parameterized.class)
-public class MESTSymetricDifference {
+public class MESTSymetricDifferenceTest {
 	// Parametry
 	Integer[] a;
 	Integer[] b;
@@ -26,7 +28,7 @@ public class MESTSymetricDifference {
 		});
 	}
 
-	public MESTSymetricDifference(Integer[] a, Integer[] b) {
+	public MESTSymetricDifferenceTest(Integer[] a, Integer[] b) {
 		this.a = a;
 		this.b = b;
 

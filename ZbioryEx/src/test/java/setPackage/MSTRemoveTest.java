@@ -4,7 +4,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class MSTRemove {
+import setPackage.MySet;
+
+public class MSTRemoveTest {
 
 	@Test
 	public void removeTest() {

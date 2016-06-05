@@ -2,7 +2,6 @@ package setPackage;
 
 import static org.junit.Assert.*;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
@@ -12,9 +11,10 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
+import setPackage.MySet;
+
 @RunWith(Parameterized.class)
-public class MSTContainsAll {
-	
+public class MSTIsEmptyTest {
 	//PARAMETRY
 	Integer[] params;
 	boolean expected;
@@ -26,24 +26,23 @@ public class MSTContainsAll {
     			{ 	{ new Integer[]{0,1,2,3}, false },
     				{ new Integer[]{}, true },
     				{ new Integer[]{0,6,3,4,8,9,1}, false },
-    				{ new Integer[]{1,2,3}, true},
-    				{ new Integer[]{2,4}, true}
+    				{ new Integer[]{1,2,3}, false},
+    				{ new Integer[]{2,4}, false}
     			} );
     }
     
-    public MSTContainsAll(Integer[] params, boolean expected)
+    public MSTIsEmptyTest(Integer[] params, boolean expected)
 	{
 		this.params = params;
 		this.expected = expected;
 	}
 	
 	@Test
-	public void testContainsAll() {
+	public void test() {
 		
-		MySet<Integer> obj = new MySet<Integer>(1,2,3,4,5);
-		List<Integer> paramsAsCol = Arrays.asList(params);
+		MySet<Integer> obj = new MySet<Integer>(params);
 		
-		assertEquals("Contains all from collection: ", expected, obj.containsAll(paramsAsCol));
+		assertEquals("Is empty: ", expected, obj.isEmpty() );
 		
 	}
 

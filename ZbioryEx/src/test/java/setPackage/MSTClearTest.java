@@ -4,15 +4,18 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class MSTCtrVariadic {
+import setPackage.MySet;
+
+public class MSTClearTest {
 
 	@Test
-	public void ctrTest1()
-	{
+	public void test() {
+		
 		MySet<Integer> obj = new MySet<Integer>(1,2,3,4,5);
 		
-		assertEquals("Test konstruktora: variadic", 5, obj.size());
+		obj.clear();
 		
+		assertEquals("Clear: ", obj, new MySet<Integer>() );
 	}
 
 }

@@ -4,7 +4,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class MSTSimpleAdd {
+import setPackage.MySet;
+
+public class MSTSimpleAddTest {
 
 	@Test
 	public void test() {

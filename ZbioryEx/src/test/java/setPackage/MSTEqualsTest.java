@@ -10,8 +10,10 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
+import setPackage.MySet;
+
 @RunWith(Parameterized.class)
-public class MSTEquals {
+public class MSTEqualsTest {
 	//PARAMETRY
 		Integer[] a;
 		Integer[] b;
@@ -29,7 +31,7 @@ public class MSTEquals {
 	    			} );
 	    }
 	    
-	    public MSTEquals(Integer[] a, Integer[] b, boolean expected)
+	    public MSTEqualsTest(Integer[] a, Integer[] b, boolean expected)
 		{
 			this.a = a;
 			this.b = b;
