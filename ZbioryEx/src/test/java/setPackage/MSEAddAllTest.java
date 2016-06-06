@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import setpackage.MyExtendedSet;
 
-public class MSEAddAll {
+public class MSEAddAllTest {
 
 	@Test
 	public void test() {

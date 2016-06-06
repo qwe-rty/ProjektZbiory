@@ -1,21 +1,19 @@
 package setPackage;
 
 import static org.junit.Assert.*;
+import setpackage.MyExtendedSet;
 
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.List;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
-import setpackage.MyExtendedSet;
-
 @RunWith(Parameterized.class)
-public class MSEContainsAll {
-	
+public class MSEIsEmptyTest {
+
 	//PARAMETRY
 	Integer[] params;
 	boolean expected;
@@ -27,25 +25,25 @@ public class MSEContainsAll {
     			{ 	{ new Integer[]{0,1,2,3}, false },
     				{ new Integer[]{}, true },
     				{ new Integer[]{0,6,3,4,8,9,1}, false },
-    				{ new Integer[]{1,2,3}, true},
-    				{ new Integer[]{2,4}, true}
+    				{ new Integer[]{1,2,3}, false},
+    				{ new Integer[]{2,4}, false}
     			} );
     }
     
-    public MSEContainsAll(Integer[] params, boolean expected)
+    public MSEIsEmptyTest(Integer[] params, boolean expected)
 	{
 		this.params = params;
 		this.expected = expected;
 	}
 	
 	@Test
-	public void testContainsAll() {
+	public void test() {
 		
-		MyExtendedSet<Integer> obj = new MyExtendedSet<Integer>(1,2,3,4,5);
-		List<Integer> paramsAsCol = Arrays.asList(params);
+		MyExtendedSet<Integer> obj = new MyExtendedSet<Integer>(params);
 		
-		assertEquals("Contains all from collection: ", expected, obj.containsAll(paramsAsCol));
+		assertEquals("Is empty: ", expected, obj.isEmpty() );
 		
 	}
+
 
 }

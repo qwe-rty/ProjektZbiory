@@ -5,7 +5,7 @@ import setpackage.MyExtendedSet;
 
 import org.junit.Test;
 
-public class MSECtrCpy {
+public class MSECtrCpyTest {
 
 	@Test
 	public void test() {

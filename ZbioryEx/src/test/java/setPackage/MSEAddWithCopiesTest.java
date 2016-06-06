@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import setpackage.MyExtendedSet;
 
-public class MSEAddWithCopies {
+public class MSEAddWithCopiesTest {
 
 	@Test
 	public void test() {

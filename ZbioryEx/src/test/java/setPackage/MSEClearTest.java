@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import setpackage.MyExtendedSet;
 
-public class MSEClear {
+public class MSEClearTest {
 
 	@Test
 	public void test() {

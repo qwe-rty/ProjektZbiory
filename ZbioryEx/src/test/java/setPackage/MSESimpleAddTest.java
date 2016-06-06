@@ -5,7 +5,7 @@ import setpackage.MyExtendedSet;
 
 import org.junit.Test;
 
-public class MSESimpleAdd {
+public class MSESimpleAddTest {
 
 	@Test
 	public void test() {
